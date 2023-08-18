@@ -14,30 +14,31 @@ public class CalculatorUsingSwitch {
             num1 = in.nextInt();
             System.out.println("Enter num2: ");
             num2 = in.nextInt();
-            switch (operator){
-            case '+':
-                answer = num1 + num2;
-                System.out.println("answer = "+ answer);
-                break;
-            case '-':
-                answer = num1 - num2;
-                System.out.println("answer = "+ answer);
-                break;
-            case '/':
-                answer = num1 / num2;
-                System.out.println("answer = "+ answer);
-                break;
-            case '%':
-                answer = num1 % num2;
-                System.out.println("answer = "+ answer);
-                break;
-            case '*':
-                answer = num1 * num2;
-                System.out.println("answer = "+ answer);
-                break;
-            default:
-                System.out.println("Please enter a valid operator");
-                continue;
+            switch (operator) {
+                case '+' -> {
+                    answer = num1 + num2;
+                    System.out.println("answer = " + answer);
+                }
+                case '-' -> {
+                    answer = num1 - num2;
+                    System.out.println("answer = " + answer);
+                }
+                case '/' -> {
+                    answer = num1 / num2;
+                    System.out.println("answer = " + answer);
+                }
+                case '%' -> {
+                    answer = num1 % num2;
+                    System.out.println("answer = " + answer);
+                }
+                case '*' -> {
+                    answer = num1 * num2;
+                    System.out.println("answer = " + answer);
+                }
+                default -> {
+                    System.out.println("Please enter a valid operator");
+                    continue;
+                }
             }
             System.out.println("Select Y / N ");
             choice = in.next();
