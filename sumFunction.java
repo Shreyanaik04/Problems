@@ -26,6 +26,5 @@ public class sumFunction {
                 System.out.println("Please select valid choice!!");
             }
         }
-
     }
 }
